@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'PoliceFleur';
+    src: url('police/FleurDeLeah-Regular.ttf') format('truetype');
+}
+
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main{
+    min-height: 60vh;
+}
+
+h1{
+    margin: 0;
+    font-size: 350%;
+    text-align: center;
+    margin-right: auto;
+    font-family: 'PoliceFleur',  Arial, Helvetica, sans-serif;
+}
+
+nav{
+    text-align: center;
+    margin-right: auto;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+}
+
+nav ul li a:hover{
+    color: rgb(215, 215, 215);
+    background-color: rgb(6, 90, 0);
+    border-color: rgb(6, 90, 0);
+    border-radius: 50px;
+}
+
+.menu_gauche{
+    margin: 0;
+    background-color: rgb(149, 206, 151);
+    text-align: center;
+    width: 10%;
+    min-width: 180px;
+    border-radius: 0 20px 20px 0;
+    padding: 10px 0 10px 0;
+    transform: translateX(-160px);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu_gauche:hover{
+    transform: translateX(0px);
+}
+
+.menu_gauche a{
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu_gauche a:hover{
+    color: rgb(215, 215, 215);
+    background-color: rgb(6, 90, 0);
+    border-radius: 50px;
+}
+
+.menu_gauche ul{
+    padding: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.menu_gauche li{
+    margin: 10px;
+    list-style: none;
+}
+
+footer {
+    text-align: center;
+}
+
+footer li{
+    list-style: none;
+}
