@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'PoliceFleur';
-    src: url('police/FleurDeLeah-Regular.ttf') format('truetype');
+    font-family: 'PolicePorsche';
+    src: url('police/porsche.ttf') format('truetype');
 }
 
 html,body{
@@ -19,12 +19,16 @@ h1{
     font-size: 350%;
     text-align: center;
     margin-right: auto;
-    font-family: 'PoliceFleur',  Arial, Helvetica, sans-serif;
+    font-family: 'PolicePorsche',  Arial, Helvetica, sans-serif;
 }
 
 nav{
     text-align: center;
     margin-right: auto;
+}
+
+nav ul{ 
+    padding-left: 0;
 }
 
 nav ul li{
@@ -42,14 +46,14 @@ nav ul li a{
 
 nav ul li a:hover{
     color: rgb(215, 215, 215);
-    background-color: rgb(6, 90, 0);
-    border-color: rgb(6, 90, 0);
+    background-color: #b32821;
+    border-color: #b32821;
     border-radius: 50px;
 }
 
 .menu_gauche{
     margin: 0;
-    background-color: rgb(149, 206, 151);
+    background-color: #ad6a67;
     text-align: center;
     width: 10%;
     min-width: 180px;
@@ -72,7 +76,7 @@ nav ul li a:hover{
 
 .menu_gauche a:hover{
     color: rgb(215, 215, 215);
-    background-color: rgb(6, 90, 0);
+    background-color: #b32821;
     border-radius: 50px;
 }
 

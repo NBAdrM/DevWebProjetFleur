@@ -5,7 +5,7 @@
                 </main>
                 <footer>
                     <ul>
-                        <li>Copyright Société Lafleur</li>
+                        <li>Copyright Porsche</li>
                         <li>Webmaster CY Tech</li>
                     </ul>
                 </footer>
