@@ -21,7 +21,11 @@
                             <li><a href=\"goodis.php\">Goodis</a></li>
                             <li><a href=\"contact.php\">Contact</a></li>
                         </ul>
+                        <ul class=\"connection\">
+                            <li><a href=\"connection.php\">Connection</a></li>
+                        </ul>
                     </nav>
+                    
                 </header>
                 <main>
                 <div class=\"menu_gauche\">
