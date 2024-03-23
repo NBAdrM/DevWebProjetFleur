@@ -11,15 +11,37 @@ html,body{
 }
 
 main{
-    min-height: 60vh;
+    min-height: 70vh;
+}
+
+header>a{
+    text-decoration: none;
 }
 
 h1{
-    margin: 0;
+    width: 475px;
+    margin: 0 auto 0 auto;
     font-size: 350%;
     text-align: center;
     margin-right: auto;
     font-family: 'PolicePorsche',  Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+h1::before{
+    position: absolute;
+    top: 20px;
+    transform: translateX(-60px) skewX(-25deg);
+    width: 50px;
+    height: 40px;
+    z-index: 5;
+    content: '';
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255, 255, 255, 0.75) 100%);
+    opacity: 0%;
+}
+
+h1:hover::before{
+    animation: hover-titre 1s ease-in-out 1;
 }
 
 nav{
@@ -109,6 +131,7 @@ footer {
 footer li{
     list-style: none;
 }
+
 .login-box {
     position: relative;
     top: 200px;
@@ -120,6 +143,19 @@ footer li{
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
+}
+
+.inscription{
+    top: 270px;
+    margin-bottom: 50px;
+}
+
+
+.login-box h2{
+    font-family: 'PolicePorsche',sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .login-box .user-box {
@@ -157,7 +193,9 @@ footer li{
     font-size: 12px;
 }
 
-.login-box form a {
+.login-box form button {
+    background-color: rgba(0,0,0,0);
+    border: none;
     margin-left: 110px;
     position: relative;
     display: inline-block;
@@ -172,7 +210,7 @@ footer li{
     letter-spacing: 4px
 }
 
-.login-box a:hover {
+.login-box button:hover {
     background: #b32821;
     color: #fff;
     border-radius: 5px;
@@ -182,18 +220,37 @@ footer li{
                 0 0 100px #b32821;
 }
 
-.login-box a span {
+.login-box button span {
     position: absolute;
     display: block;
 }
 
-.login-box a span:nth-child(1) {
+.login-box button span:nth-child(1) {
     bottom: 2px;
     left: -100%;
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg, transparent, #b32821);
     animation: btn-anim1 2s linear infinite;
+}
+
+.switch-con{
+    display: block;
+    text-align: center;
+}
+
+.switch-con a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.login-box a:hover{
+    color: #ad6a67;
+}
+
+.login-error{
+    text-align: center;
+    animation: error-alert 0.5s ease-in-out 2;
 }
 
 @keyframes btn-anim1 {
@@ -204,5 +261,36 @@ footer li{
     50%,100% {
       left: 100%;
     }
-  }
-  
+}
+
+@keyframes error-alert {
+    0%{
+        color: black;
+    }
+
+    50%{
+        color: #ff0d00;
+    }
+
+    100%{
+        color: black;
+    }
+}
+
+@keyframes hover-titre{
+    0%{
+        opacity: 0%;
+    }
+
+    1%{
+        opacity: 100%;
+    }
+
+    99%{
+        transform: translateX(950%) skewX(-25deg);
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}

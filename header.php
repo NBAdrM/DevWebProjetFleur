@@ -12,7 +12,9 @@
             </head>
             <body>
                 <header>
-                    <h1>PORSCHE</h1>
+                    <a href=\"index.php\">
+                        <h1>PORSCHE</h1>
+                    </a>
                     <nav>
                         <ul>
                             <li><a href=\"index.php\">Accueil</a></li>
@@ -22,7 +24,7 @@
                             <li><a href=\"contact.php\">Contact</a></li>
                         </ul>
                         <ul class=\"connection\">
-                            <li><a href=\"connection.php\">Connection</a></li>
+                            <li><a href=\"connection.php\">Connexion</a></li>
                         </ul>
                     </nav>
                     
