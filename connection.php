@@ -1,6 +1,8 @@
 <?php
-    include("header.php");
-    include("footer.php");
+    include("include/header.php");
+    include("include/footer.php");
+    include("include/fonction.php");
+    include("include/fonction.inscription.php");
 
     PrintHeader();
     $nom="";
@@ -20,14 +22,15 @@
                 $error="<h3 class=\"login-error\">Votre email n'est pas valable</h3>";
             }
             else{
-                //TODO mettre les identifiant dans un fichier .conf et le retier du git
-                $mysqli = new mysqli("localhost", "root", "", "porsche",3308);
-                $result = $mysqli->query("SELECT * FROM user WHERE email=\"".$email."\"");
+                $result = requetBDD("SELECT * FROM user WHERE email=\"".$email."\";");
                 if($result->num_rows > 0){
                     $error= "<h3 class=\"login-error\">Cette email est déjà asocier a un compte</h3>";
                 }
                 else{
                     //TODO inserer dans la bdd avec un token aleatoire et enoyer l'email de confiramtion
+                    $token = random_string(20);
+                    echo requetBDD("INSERT INTO User (nom,email,pwd,token) VALUES('".$nom."','".$email."',SHA1('".$pwd."'),'".$token."' );");
+                    emailInscription($email,$nom,$token);
                 }
             }
         }
@@ -96,6 +99,6 @@
 
 <?php
     
-
     PrintFooter();
+
 ?>
