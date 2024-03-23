@@ -1,7 +1,3 @@
-<?php ob_start();
-$titre = "Catalogue de voiture";
-?>
-
 <?php
     include("header.php");
     include("footer.php");
@@ -18,14 +14,26 @@ $titre = "Catalogue de voiture";
         echo 'Connexion échoué : ' . $e->getMessage();
     }
 
-    $req = "Select * FROM voiture";
+    $req = "SELECT * FROM voiture";
     $stmt = $pdo->prepare($req);
     $stmt->execute();
-    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $voiture = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
+<?php foreach ($voiture as $v) : ?>
 
-    echo"<pre>";
-    print_r($result);
-    
+  <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="img/<?= $v['image_path'] ?>" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><?= $v['nom'] ?></h5>
+    <p class="card-text">J'aime Adrien</p>
+    <a href="#" class="btn btn-primary">Test</a>
+  </div>
+</div>
+
+<?php endforeach; ?>
+
+<?php 
 
     PrintFooter();
+
 ?>
