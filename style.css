@@ -14,12 +14,34 @@ main{
     min-height: 70vh;
 }
 
+header>a{
+    text-decoration: none;
+}
+
 h1{
-    margin: 0;
+    width: 475px;
+    margin: 0 auto 0 auto;
     font-size: 350%;
     text-align: center;
     margin-right: auto;
     font-family: 'PolicePorsche',  Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+h1::before{
+    position: absolute;
+    top: 20px;
+    transform: translateX(-60px) skewX(-25deg);
+    width: 50px;
+    height: 40px;
+    z-index: 5;
+    content: '';
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255, 255, 255, 0.75) 100%);
+    opacity: 0%;
+}
+
+h1:hover::before{
+    animation: hover-titre 1s ease-in-out 1;
 }
 
 nav{
@@ -252,5 +274,23 @@ footer li{
 
     100%{
         color: black;
+    }
+}
+
+@keyframes hover-titre{
+    0%{
+        opacity: 0%;
+    }
+
+    1%{
+        opacity: 100%;
+    }
+
+    99%{
+        transform: translateX(950%) skewX(-25deg);
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
     }
 }
