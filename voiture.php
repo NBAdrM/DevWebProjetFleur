@@ -3,8 +3,8 @@ $titre = "Catalogue de voiture";
 ?>
 
 <?php
-    include("header.php");
-    include("footer.php");
+    include("include/header.php");
+    include("include/footer.php");
 
     PrintHeader();
     /* Connexion à une base MySQL */
