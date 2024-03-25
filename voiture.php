@@ -1,32 +1,18 @@
 <?php
     include("include/header.php");
     include("include/footer.php");
+    include("include/fonction.php");
 
-    PrintHeader();
-    /* Connexion à une base MySQL */
-    //TODO mettre les identifiant dans un fichier .conf
-    $dsn = 'mysql:dbname=projet devweb;host=localhost';
-    $user = 'root';
-    $password = '';
+    PrintHeader(); 
+    $req = requetBDD("SELECT * FROM voiture");
 
-    try {
-        $pdo = new PDO($dsn, $user, $password);
-    } catch (PDOException $e) {
-        echo 'Connexion échoué : ' . $e->getMessage();
-    }
-
-    $req = "SELECT * FROM voiture";
-    $stmt = $pdo->prepare($req);
-    $stmt->execute();
-    $voiture = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-  foreach ($voiture as $v) : ?>
+  foreach ($req as $v) : ?>
 
   <div class="card" style="width: 18rem;">
     <img class="card-img-top" src="img/<?= $v['image_path'] ?>" alt="...">
     <div class="card-body">
       <h5 class="card-title"><?= $v['nom'] ?></h5>
-      <p class="card-text">J'aime Adrien</p>
+      <p class="card-text">Prix : <?= $v['prix']?></p>
       <a href="#" class="btn btn-primary">Test</a>
     </div>
   </div>
