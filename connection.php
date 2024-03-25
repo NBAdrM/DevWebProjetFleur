@@ -68,6 +68,7 @@
         </div>";
     }
     else {
+        echo checkConnexion();
         echo "<div class=\"login-box\">
         <h2>Connection</h2>
         <form action=\"\" method=\"POST\">
