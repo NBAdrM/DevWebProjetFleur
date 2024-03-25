@@ -117,7 +117,7 @@ nav ul li a:hover{
     border-radius: 50px;
 }
 
-.connection li{
+.connexion li{
     position: absolute;
     text-decoration: none;
     color: black;
@@ -126,6 +126,7 @@ nav ul li a:hover{
 }
 
 .menu_gauche{
+    color: white;
     position: absolute;
     top: 15%;
     margin: 0;
@@ -146,7 +147,7 @@ nav ul li a:hover{
 .menu_gauche a{
     padding: 5px 10px;
     text-decoration: none;
-    color: black;
+    color: white;
     transition: all 0.2s ease-in-out;
 }
 
