@@ -1,8 +1,15 @@
 <?php
 
     function PrintHeader(){
+        session_start();
+        $connexion= '';
+        if (empty($_SESSION['id'])) {
+            $connexion="<ul class=\"connexion\">
+                <li><a href=\"connexion.php\">Connexion</a></li>
+                </ul>";
+        }
         echo"
-        <!DOCTYPE html>
+        <!DOCTYPE html> 
         <html>
             <head>
                 <meta charset=\"UTF-8\">
@@ -23,11 +30,8 @@
                             <li><a href=\"goodis.php\">Goodis</a></li>
                             <li><a href=\"contact.php\">Contact</a></li>
                         </ul>
-                        <ul class=\"connection\">
-                            <li><a href=\"connection.php\">Connexion</a></li>
-                        </ul>
+                        ".$connexion."
                     </nav>
-                    
                 </header>
                 <main>
                 <div class=\"menu_gauche\">
