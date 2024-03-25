@@ -7,18 +7,16 @@
     $req = requetBDD("SELECT * FROM voiture");?>
 
 <table class="voiture">  
-<thead>
-    <tr>
-    </tr>
-  </thead>
   <tbody>
     <?php foreach ($req as $v) : ?>
       <tr>
         <td>
-          <figure>
-            <img src="./img/<?= $v['image_path'] ?>" alt="<?= $v['nom']?>">
-            <figcaption> <?= $v['nom']?> </figcaption>
-          </figure> 
+          <a href="./img/<?= $v['image_path'] ?>" target="_blank">
+            <figure>
+              <img src="./img/<?= $v['image_path'] ?>" alt="<?= $v['nom']?>">
+              <figcaption> <?= $v['nom']?> </figcaption>
+            </figure> 
+          </a>
         </td>
         <td><?= $v['prix'] ?>€</td>
         <td><?= $v['stock'] ?> unité(s)</td>
