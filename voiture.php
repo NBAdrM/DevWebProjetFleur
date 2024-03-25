@@ -4,7 +4,10 @@
     include("include/fonction.php");
 
     PrintHeader(); 
-    $req = requetBDD("SELECT * FROM voiture");?>
+    $req = requetBDD("SELECT * FROM voiture");
+?>
+
+<script src="js/compteur.js"></script>
 
 <table class="voiture">  
   <tbody>
@@ -21,16 +24,18 @@
         <td><?= $v['prix'] ?>€</td>
         <td><?= $v['stock'] ?> unité(s)</td>
         <td>
-          <div class="compteur">
+          <div class="compteur" data-stock="<?= $v['stock'] ?>">
             <button class="btn-decre">-</button>
             <button class="btn-incre">+</button>
-               <div class="quantity">0</div>
+               <div class="quantite">0</div>
           </div>
         </td>
       </tr>
     <?php endforeach; ?>
   </tbody>
 </table>
+
+
 
 <?php
     PrintFooter();
