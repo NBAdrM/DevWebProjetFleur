@@ -46,6 +46,7 @@ header>a{
   .voiture tr{
     margin-bottom: 100px;
     display: block;
+    border: 1px solid black
   }
 
   .voiture figure {
@@ -55,7 +56,8 @@ header>a{
 }
   .voiture img {
     width: 75%;
-}
+    }
+
   .voiture a {
     color: black;
     text-decoration:none;
@@ -84,7 +86,6 @@ header>a{
   
   .quantite {
     font-size: 16px;
-    margin-left: 10px;
   }
   
 h1{
