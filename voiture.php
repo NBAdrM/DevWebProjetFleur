@@ -4,21 +4,29 @@
     include("include/fonction.php");
 
     PrintHeader(); 
-    $req = requetBDD("SELECT * FROM voiture");
+    $req = requetBDD("SELECT * FROM voiture");?>
 
-  foreach ($req as $v) : ?>
+<table class="voiture">  
+<thead>
+    <tr>
+    </tr>
+  </thead>
+  <tbody>
+    <?php foreach ($req as $v) : ?>
+      <tr>
+        <td>
+          <figure>
+            <img src="./img/<?= $v['image_path'] ?>" alt="<?= $v['nom']?>">
+            <figcaption> <?= $v['nom']?> </figcaption>
+          </figure> 
+        </td>
+        <td><?= $v['prix'] ?>€</td>
+        <td><?= $v['stock'] ?> unité(s)</td>
+      </tr>
+    <?php endforeach; ?>
+  </tbody>
+</table>
 
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="img/<?= $v['image_path'] ?>" alt="...">
-    <div class="card-body">
-      <h5 class="card-title"><?= $v['nom'] ?></h5>
-      <p class="card-text">Prix : <?= $v['prix']?></p>
-      <a href="#" class="btn btn-primary">Test</a>
-    </div>
-  </div>
-
-<?php endforeach; 
-
+<?php
     PrintFooter();
-
 ?>

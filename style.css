@@ -18,6 +18,49 @@ header>a{
     text-decoration: none;
 }
 
+.voiture {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .voiture thead,.voiture
+  tfoot {
+    background-color: rgb(228 240 245);
+  }
+  
+  .voiture th,.voiture
+  td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+  }
+  
+  .voiture td:last-of-type {
+    text-align: center;
+  }
+  
+  .voituretfoot th {
+    text-align: right;
+  }
+  
+  .voituretfoot td {
+    font-weight: bold;
+  }
+
+  .voiture figure {
+    margin: 0 auto 0 auto;
+    text-align: center;
+    width: 500px;
+}
+  .voiture img {
+    width: 75%;
+}
+  
 h1{
     width: 475px;
     margin: 0 auto 0 auto;
@@ -294,3 +337,4 @@ footer li{
         opacity: 0%;
     }
 }
+
