@@ -20,6 +20,13 @@
         </td>
         <td><?= $v['prix'] ?>€</td>
         <td><?= $v['stock'] ?> unité(s)</td>
+        <td>
+          <div class="compteur">
+            <button class="btn-decre">-</button>
+            <button class="btn-incre">+</button>
+               <div class="quantity">0</div>
+          </div>
+        </td>
       </tr>
     <?php endforeach; ?>
   </tbody>
