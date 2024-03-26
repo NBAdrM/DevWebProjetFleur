@@ -2,11 +2,15 @@
 
     function PrintHeader(){
         session_start();
-        $connexion= '';
         if (empty($_SESSION['id'])) {
             $connexion="<ul class=\"connexion\">
-                <li><a href=\"connexion.php\">Connexion</a></li>
-                </ul>";
+                <li><a href=\"connection.php\">Connexion</a></li>
+            </ul>";
+        }
+        else {
+            $connexion="<ul class=\"connexion\">
+                <li><a href=\"compte.php\">Compte</a></li>
+            </ul>";
         }
         echo"
         <!DOCTYPE html> 
