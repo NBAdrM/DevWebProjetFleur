@@ -8,6 +8,7 @@
 ?>
 
 <script src="js/compteur.js"></script>
+<script src="js/stock_restant.js"></script>
 
 <table class="voiture">  
   <tbody>
@@ -22,14 +23,16 @@
           </a>
         </td>
         <td><?= $v['prix'] ?>€</td>
-        
-        <td style="display:none"><?= $v['stock'] ?> unité(s)</td>
         <td>
           <div class="compteur" data-stock="<?= $v['stock'] ?>">
             <button class="btn-decre">-</button>
             <button class="btn-incre">+</button>
-               <div class="quantite">0</div>
+              <div class="quantite">0</div>
           </div>
+          <br>
+            <input class="btn-panier" type="button" value="Ajouter au panier" />
+          <br>
+            <input class="btn-stock" data-stock="<?= $v['stock'] ?>" type="button" value="Voir stock restant"/>
         </td>
       </tr>  
     <?php endforeach; ?>
