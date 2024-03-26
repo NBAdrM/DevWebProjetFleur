@@ -8,6 +8,7 @@
     }
     if(isset($_POST["deco"])){
         session_destroy();
+        header('Location: connection.php');
     }
     $result=requetBDD("SELECT * FROM user WHERE id=".$_SESSION['id'].";");
     $row = $result->fetch_array(MYSQLI_NUM);
