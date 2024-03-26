@@ -23,6 +23,7 @@
           </a>
         </td>
         <td><?= $v['prix'] ?>€</td>
+        <td></td> 
         <td>
           <div class="compteur" data-stock="<?= $v['stock'] ?>">
             <button class="btn-decre">-</button>
