@@ -2,7 +2,7 @@
     include("include/header.php");
     include("include/footer.php");
     include("include/fonction.php");
-
+    //TODO Faire afficher le stock que quand on clic sur le mot stock
     PrintHeader(); 
     $req = requetBDD("SELECT * FROM voiture");
 ?>
@@ -22,7 +22,8 @@
           </a>
         </td>
         <td><?= $v['prix'] ?>€</td>
-        <td><?= $v['stock'] ?> unité(s)</td>
+        
+        <td style="display:none"><?= $v['stock'] ?> unité(s)</td>
         <td>
           <div class="compteur" data-stock="<?= $v['stock'] ?>">
             <button class="btn-decre">-</button>
@@ -30,7 +31,7 @@
                <div class="quantite">0</div>
           </div>
         </td>
-      </tr>
+      </tr>  
     <?php endforeach; ?>
   </tbody>
 </table>
