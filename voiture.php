@@ -30,10 +30,8 @@
             <button class="btn-incre">+</button>
               <div class="quantite">0</div>
           </div>
-          <br>
-            <input class="btn-panier" type="button" value="Ajouter au panier" />
-          <br>
-            <input class="btn-stock" data-stock="<?= $v['stock'] ?>" type="button" value="Voir stock restant"/>
+          <input class="btn-panier" type="button" value="Ajouter au panier" />
+          <input class="btn-stock" data-stock="<?= $v['stock'] ?>" type="button" value="Voir stock restant"/>
         </td>
       </tr>  
     <?php endforeach; ?>
