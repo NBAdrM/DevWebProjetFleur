@@ -2,30 +2,45 @@
     include("include/header.php");
     include("include/footer.php");
     include("include/fonction.php");
-
+    //TODO Faire afficher le stock que quand on clic sur le mot stock
     PrintHeader(); 
-    $req = requetBDD("SELECT * FROM voiture");?>
+    $req = requetBDD("SELECT * FROM voiture");
+?>
+
+<script src="js/compteur.js"></script>
+<script src="js/stock_restant.js"></script>
 
 <table class="voiture">  
-<thead>
-    <tr>
-    </tr>
-  </thead>
   <tbody>
     <?php foreach ($req as $v) : ?>
       <tr>
         <td>
-          <figure>
-            <img src="./img/<?= $v['image_path'] ?>" alt="<?= $v['nom']?>">
-            <figcaption> <?= $v['nom']?> </figcaption>
-          </figure> 
+          <a href="./img/<?= $v['image_path'] ?>" target="_blank">
+            <figure>
+              <img src="./img/<?= $v['image_path'] ?>" alt="<?= $v['nom']?>">
+              <figcaption> <?= $v['nom']?> </figcaption>
+            </figure> 
+          </a>
         </td>
         <td><?= $v['prix'] ?>€</td>
-        <td><?= $v['stock'] ?> unité(s)</td>
-      </tr>
+        <td></td> 
+        <td>
+          <div class="compteur" data-stock="<?= $v['stock'] ?>">
+            <button class="btn-decre">-</button>
+            <button class="btn-incre">+</button>
+              <div class="quantite">0</div>
+          </div>
+          <br>
+            <input class="btn-panier" type="button" value="Ajouter au panier" />
+          <br>
+            <input class="btn-stock" data-stock="<?= $v['stock'] ?>" type="button" value="Voir stock restant"/>
+        </td>
+      </tr>  
     <?php endforeach; ?>
   </tbody>
 </table>
+
+
 
 <?php
     PrintFooter();
