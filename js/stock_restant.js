@@ -5,7 +5,7 @@ document.addEventListener("click", function(){
         btn.addEventListener('click',function(){
         
         const tdStock = btn.parentNode.previousElementSibling;
-        const stock = parseInt(compteur.dataset.stock);
+        const stock = parseInt(btn.dataset.stock);
         tdStock.textContent = stock;
 
         })
