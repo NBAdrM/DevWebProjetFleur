@@ -392,6 +392,14 @@ footer li{
     animation: error-alert 0.5s ease-in-out 2;
 }
 
+.bvn-compte{
+    margin-left: 15%;
+}
+
+.deco{
+    text-align: center;
+}
+
 @keyframes btn-anim1 {
     0% {
       left: -100%;

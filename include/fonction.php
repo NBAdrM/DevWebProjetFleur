@@ -28,7 +28,7 @@
 				return "L'email ou le mot de passe ne correspond pas";
 			}
 			while ($row = mysqli_fetch_assoc($resultat)) {
-				$id .= $row['id'].' ';
+				$id = $row['id'];
 			}
 			if(isset($id)){
 					session_start();
