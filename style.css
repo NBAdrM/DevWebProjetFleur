@@ -391,12 +391,12 @@ footer li{
 /*début du form de contact*/
 .form_contact {
     margin-left: 500px;
+    font-weight: bold;
 }
 
-.form_contact label {
-    display: inline-block;
+.form_contact label{
     width: 200px;
-    font-weight: bold;
+    display: inline-block;
 }
 
 .form_contact input[type="date"],
@@ -408,7 +408,7 @@ footer li{
     margin-bottom: 10px;
     border-radius: 5px;
     padding: 5px;
-    border: 6px solid #887a47;
+    border: 6px solid #4c4b49;
     box-shadow: 10px 10px 0px #3c361f;
     text-align: center;
 }
@@ -430,14 +430,13 @@ footer li{
 
 .form_contact span{
     padding: 10px 20px;
-    background-color: #887a47;
+    background-color: #4c4b49;
     color: #fff;
     border: none;
     border-radius: 50px;
 }
 
 .form_contact span:hover{
-    background-color: #887a47;
     box-shadow: 10px 10px 0px #3c361f;
     top: -5px;
     left: -5px;

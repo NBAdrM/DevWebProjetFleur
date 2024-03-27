@@ -17,7 +17,7 @@
         </div>
         <br>
         <div class=\"form_contact\">
-            <label>Genre</label>
+            <label >Genre</label>
             <input type=\"radio\" name=\"genre\">
             <label for=\"nom\">Féminin</label>
             <input type=\"radio\" name=\"genre\">
