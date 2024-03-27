@@ -253,6 +253,10 @@ footer li{
     list-style: none;
 }
 
+<<<<<<< Updated upstream
+=======
+    /* Debut Form Connection */
+>>>>>>> Stashed changes
 .login-box {
     position: relative;
     top: 200px;
@@ -354,6 +358,7 @@ footer li{
     background: linear-gradient(90deg, transparent, #b32821);
     animation: btn-anim1 2s linear infinite;
 }
+    /* Fin Form Connection */
 
 .switch-con{
     display: block;
