@@ -5,26 +5,32 @@
     PrintHeader();
 ?>
 <?php
-    echo"
-            <h2>Contactez-nous</h2>
-            <form action=\"\" method=\"GET\">
-            <div class=\"\">
-                <label for=\"nom\">Nom :</label>
-                <input type=\"text\" id=\"nom\" name=\"nom\">
-            </div>
-            <label for=\"nom\">Prénom :</label>
-            <input type=\"text\" id=\"nom\" name=\"nom\"><br>
-            <p>Genre :
-                <input type=\"radio\">
-                <label for=\"nom\">Feminin </label>
-                <input type=\"radio\">
-                <label for=\"nom\">Masculin </label>
-                
-            </p>
-            <label for=\"email\">Date de naissance :</label>
-            <input type=\"date\" id=\"email\" name=\"email\"><br>
-            <p>Fonction :
-                <select name=\"classe\" id=\"classe\">
+    echo"<h2 class=\"titre\">Contacter nous</h2>
+    <form action=\"\" method=\"GET\">
+        <div class=\"form_contact\">
+            <label for=\"nom\">Nom</label>
+            <input type=\"text\">
+        </div>
+        <div class=\"form_contact\">
+            <label for=\"nom\">Prénom</label>
+            <input type=\"text\">
+        </div>
+        <div class=\"form_contact\">
+            <label>Genre</label>
+            <input type=\"radio\" name=\"genre\">
+            <label for=\"nom\">Féminin </label>
+            <input type=\"radio\" name=\"genre\">
+            <label for=\"nom\">Masculin </label>
+        </div>
+        <br>
+        <div class=\"form_contact\">
+            <label for=\"email\">Date de naissance</label>
+            <input type=\"date\">
+        </div>
+        <br>
+        <div class=\"form_contact\">
+            <label>Fonction</label>
+                <select>
                     <option value=\"\">--Veuillez choisir une option--</option>
                     <option value=\"Enseignant\">Enseignant</option>
                     <option value=\"Cadre\">Cadre</option>
@@ -34,15 +40,24 @@
                     <option value=\"Technicien\">Technicien</option>
                     <option value=\"Autre\">Autre</option>
                 </select>
-            </p>
-            <label for=\"email\">Email :</label>
-            <input type=\"email\" id=\"email\" name=\"email\"><br>
-            <label for=\"nom\">Sujet :</label>
-            <input type=\"text\" id=\"nom\" name=\"nom\"><br>
-            <label for=\"message\">Contenu :</label>
-            <textarea id=\"message\" name=\"message\" rows=\"4\" cols=\"50\"></textarea><br>
+        </div>
+        <br>
+        <div class=\"form_contact\">
+            <label for=\"email\">Email</label>
+            <input type=\"email\">
+        </div>
+        <div class=\"form_contact\">
+            <label for=\"nom\">Sujet</label>
+            <input type=\"text\">
+        </div>
+        <div class=\"form_contact\">
+            <label for=\"message\">Contenu</label>
+            <textarea rows=\"4\" cols=\"50\"></textarea>
+        </div>
+        <div class=\"form_contact\">
             <input type=\"submit\" value=\"Envoyer\">
-        </form>";
+        </div>
+    </form>";
 ?> 
 <?php
     PrintFooter();
