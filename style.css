@@ -26,9 +26,9 @@ header>a{
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-}
+  }
   
-.voiture tbody tr {
+  .voiture tbody tr {
     margin-bottom: 100px;
     display: block;
     border-radius: 50px;
@@ -37,45 +37,42 @@ header>a{
                     -20px -20px 60px #ffffff;
 }
 
-.voiture thead,.voiture tfoot {
+  .voiture thead,.voiture
+  tfoot {
     background-color: rgb(228 240 245);
-}
+  }
   
-.voiture th,.voiture td {
+  .voiture th,.voiture
+  td {
     padding: 8px 10px;
-}
+  }
   
-.voiture figure {
+  .voiture figure {
     margin: 0 auto 0 auto;
     text-align: center;
     width: 500px;
 }
-
-.voiture img {
+  .voiture img {
     width: 75%;
-}
+    }
 
-.voiture a {
+  .voiture a {
     color: black;
     text-decoration:none;
-}
+  }
 
-.compteur {
+  .compteur {
     display: flex;
     align-items: center;
-}
+  }
 
-.quantite {
+  .quantite {
     font-size: 16px;
     margin-left: 10px;
     margin-right: 35px;
-}
-
-.compteur input{
-    display: none;
-}
+  }
   
-.compteur button {
+  .compteur button {
     width: 30px;
     height: 30px;
     font-size: 18px;
@@ -85,13 +82,13 @@ header>a{
     border-radius: 5px;
     cursor: pointer;
     margin: 0 auto 0 auto;
-}
+  }
   
-.compteur button:hover {
+  .compteur button:hover {
     background-color: #0056b3;
-}
+  }
 
-.btn {
+  .btn {
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;
@@ -105,41 +102,41 @@ header>a{
     cursor: pointer;
     margin-top: 25px;
     margin-right: 25px;
-}
+  }
   
-.btn > span {
+  .btn > span {
     display: inline-block;
     transition: all ease-in-out .5s;
-}
+  }
   
-.btn__visible {
+  .btn__visible {
     padding: 1.2rem 3rem;
     text-align: center;
-}
+  }
   
-.btn__invisible {
+  .btn__invisible {
     width: 100%;
     position: absolute;
     padding: 1.2rem 0;
     left: 0;
     top: -100%;
-}
+  }
   
-.btn:hover {
+  .btn:hover {
     background-image: linear-gradient(160deg, #ad6a67 0%, #b32821 100%);
-}
+  }
   
-.btn:hover .btn__visible {
+  .btn:hover .btn__visible {
     transform: translateY(100%);
-}
+  }
   
-.btn:hover .btn__invisible {
+  .btn:hover .btn__invisible {
     top: 0;
-}
+  }
   
-.btn:focus {
+  .btn:focus {
     outline: none;
-}
+  }
   
 h1{
     width: 475px;
@@ -357,6 +354,7 @@ footer li{
     background: linear-gradient(90deg, transparent, #b32821);
     animation: btn-anim1 2s linear infinite;
 }
+    /* Fin Form Connection */
 
 .switch-con{
     display: block;
@@ -385,9 +383,74 @@ footer li{
     text-align: center;
 }
 
-.conf_panier{
+.titre{
+    text-align: center;
+    font-weight: bold;
+}
+
+/*début du form de contact*/
+
+.global {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+
+.form_contact {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.form_contact label{
+    width: 200px;
+    display: inline-block;
+}
+
+.form_contact input[type="date"],
+.form_contact input[type="text"],
+.form_contact input[type="email"],
+.form_contact select,
+.form_contact textarea {
+    width: 250px; 
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 6px solid #4c4b49;
+    box-shadow: 10px 10px 0px #3c361f;
     text-align: center;
 }
+
+.form_contact input[type="text"]:hover,
+.form_contact input[type="email"]:hover,
+.form_contact select:hover,
+.form_contact textarea:hover {
+    box-shadow: 20px 20px 0px #3c361f;
+    top: -5px;
+    left: -5px;
+}
+
+.form_contact textarea{
+    resize : none;
+    width : 450px;
+    height : 100px;
+}
+
+.form_contact span{
+    padding: 10px 20px;
+    background-color: #4c4b49;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+}
+
+.form_contact span:hover{
+    box-shadow: 10px 10px 0px #3c361f;
+    top: -5px;
+    left: -5px;
+}
+/*Fin du From de contact*/
 
 @keyframes btn-anim1 {
     0% {

@@ -57,8 +57,6 @@
     </tbody>
   </table>
 
-
-
 <?php
     PrintFooter();
 ?>
