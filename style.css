@@ -26,9 +26,9 @@ header>a{
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-  }
+}
   
-  .voiture tbody tr {
+.voiture tbody tr {
     margin-bottom: 100px;
     display: block;
     border-radius: 50px;
@@ -37,42 +37,45 @@ header>a{
                     -20px -20px 60px #ffffff;
 }
 
-  .voiture thead,.voiture
-  tfoot {
+.voiture thead,.voiture tfoot {
     background-color: rgb(228 240 245);
-  }
+}
   
-  .voiture th,.voiture
-  td {
+.voiture th,.voiture td {
     padding: 8px 10px;
-  }
+}
   
-  .voiture figure {
+.voiture figure {
     margin: 0 auto 0 auto;
     text-align: center;
     width: 500px;
 }
-  .voiture img {
-    width: 75%;
-    }
 
-  .voiture a {
+.voiture img {
+    width: 75%;
+}
+
+.voiture a {
     color: black;
     text-decoration:none;
-  }
+}
 
-  .compteur {
+.compteur {
     display: flex;
     align-items: center;
-  }
+}
 
-  .quantite {
+.quantite {
     font-size: 16px;
     margin-left: 10px;
     margin-right: 35px;
-  }
+}
+
+.compteur input{
+    display: none;
+}
   
-  .compteur button {
+.compteur button {
     width: 30px;
     height: 30px;
     font-size: 18px;
@@ -82,13 +85,13 @@ header>a{
     border-radius: 5px;
     cursor: pointer;
     margin: 0 auto 0 auto;
-  }
+}
   
-  .compteur button:hover {
+.compteur button:hover {
     background-color: #0056b3;
-  }
+}
 
-  .btn {
+.btn {
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;
@@ -102,41 +105,41 @@ header>a{
     cursor: pointer;
     margin-top: 25px;
     margin-right: 25px;
-  }
+}
   
-  .btn > span {
+.btn > span {
     display: inline-block;
     transition: all ease-in-out .5s;
-  }
+}
   
-  .btn__visible {
+.btn__visible {
     padding: 1.2rem 3rem;
     text-align: center;
-  }
+}
   
-  .btn__invisible {
+.btn__invisible {
     width: 100%;
     position: absolute;
     padding: 1.2rem 0;
     left: 0;
     top: -100%;
-  }
+}
   
-  .btn:hover {
+.btn:hover {
     background-image: linear-gradient(160deg, #ad6a67 0%, #b32821 100%);
-  }
+}
   
-  .btn:hover .btn__visible {
+.btn:hover .btn__visible {
     transform: translateY(100%);
-  }
+}
   
-  .btn:hover .btn__invisible {
+.btn:hover .btn__invisible {
     top: 0;
-  }
+}
   
-  .btn:focus {
+.btn:focus {
     outline: none;
-  }
+}
   
 h1{
     width: 475px;
@@ -379,6 +382,10 @@ footer li{
 }
 
 .deco{
+    text-align: center;
+}
+
+.conf_panier{
     text-align: center;
 }
 
