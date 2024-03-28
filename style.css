@@ -388,10 +388,24 @@ footer li{
     font-weight: bold;
 }
 
+.conf_panier{
+    text-align: center;
+}
+
+
 /*début du form de contact*/
+
+.global {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+
 .form_contact {
-    margin-left: 500px;
+    margin-top: 20px;
     font-weight: bold;
+    text-align: left;
 }
 
 .form_contact label{
