@@ -390,6 +390,7 @@ footer li{
 
 /*début du form de contact*/
 .form_contact {
+    margin-top: 20px;
     margin-left: 500px;
     font-weight: bold;
 }
