@@ -5,7 +5,9 @@
     PrintHeader();
 ?>
 <?php
-    echo"<h2 class=\"titre\">Contacter nous</h2>
+    echo"
+    <div class=\"global\">;
+    <h2 class=\"titre\">Contacter nous</h2>
     <form action=\"\" method=\"GET\">
         <div class=\"form_contact\">
             <label for=\"nom\">Nom</label>
@@ -55,7 +57,9 @@
         <div class=\"form_contact\">
             <span type=\"submit\">Envoyer</span>
         </div>
-    </form>";
+    </form>
+    </div>";
+
 ?> 
 <?php
     PrintFooter();
