@@ -413,6 +413,7 @@ footer li{
     text-align: center;
 }
 
+.form_contact input[type="date"],
 .form_contact input[type="text"]:hover,
 .form_contact input[type="email"]:hover,
 .form_contact select:hover,
