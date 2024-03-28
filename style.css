@@ -388,6 +388,11 @@ footer li{
     font-weight: bold;
 }
 
+.conf_panier{
+    text-align: center;
+}
+
+
 /*début du form de contact*/
 
 .global {
