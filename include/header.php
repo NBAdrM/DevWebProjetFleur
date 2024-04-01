@@ -1,5 +1,5 @@
 <?php
-
+    
     function PrintHeader(){
         session_start();
         if (empty($_SESSION['id'])) {
@@ -8,8 +8,13 @@
             </ul>";
         }
         else {
+            include_once("fonction.php");
+            $req=requetBDD("SELECT * FROM marchandise AS m JOIN panier AS p ON id_user='".$_SESSION['id']."' AND m.id=id_ref;");
+            if($req->num_rows>0){
+                $nb_panier="<span class=\"nb_panier\">$req->num_rows</span>";
+            }
             $connexion="<ul class=\"connexion\">
-                <li><a href=\"compte.php\">Compte</a></li>
+                <li><a href=\"compte.php\">Panier".$nb_panier."</a></li>
             </ul>";
         }
         echo"

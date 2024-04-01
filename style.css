@@ -71,6 +71,9 @@ header>a{
     margin-left: 10px;
     margin-right: 35px;
   }
+  .quantite2 {
+    display: none;
+  }
   
   .compteur button {
     width: 30px;
@@ -200,6 +203,16 @@ nav ul li a:hover{
     color: black;
     top: 20px;
     right: 10px;
+}
+
+.nb_panier{
+    position: absolute;
+    color: rgb(215, 215, 215);
+    top: 15px;
+    right: 5px;
+    padding: 0 5px;
+    border-radius: 50px;
+    background-color: #b32821;
 }
 
 .menu_gauche{

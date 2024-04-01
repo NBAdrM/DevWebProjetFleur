@@ -1,7 +1,7 @@
 <?php
     include("include/header.php");
     include("include/footer.php");
-    include("include/fonction.php");
+    include_once("include/fonction.php");
 
     PrintHeader(); 
 

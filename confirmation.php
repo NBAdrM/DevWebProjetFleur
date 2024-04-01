@@ -3,7 +3,7 @@
 		header('Location: connexion.php');
 	}
     else{
-        include "include/fonction.php";
+        include_once "include/fonction.php";
         $token=$_GET['token'];
         //retirer les caratere speciaux 
         //$token = str_replace( array( '%', '@', '\'', ';', '<', '>', '\"',' ' ), '', $str);
