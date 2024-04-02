@@ -37,7 +37,7 @@
                             <li><a href=\"index.php\">Accueil</a></li>
                             <li><a href=\"voiture.php\">Voiture</a></li>
                             <li><a href=\"piece.php\">Pièce</a></li>
-                            <li><a href=\"goodis.php\">Goodis</a></li>
+                            <li><a href=\"goodies.php\">Goodies</a></li>
                             <li><a href=\"contact.php\">Contact</a></li>
                         </ul>
                         ".$connexion."
@@ -51,7 +51,7 @@
                     <ul>
                         <li><a href=\"voiture.php\">Voiture</a></li>
                         <li><a href=\"piece.php\">Pièce</a></li>
-                        <li><a href=\"goodis.php\">Goodis</a></li>
+                        <li><a href=\"goodies.php\">Goodies</a></li>
                         <li><a href=\"contact.php\">Contact</a></li>
                     </ul>
                 </div>

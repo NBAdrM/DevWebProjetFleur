@@ -20,7 +20,7 @@
         }
       }
     }
-    $req = requetBDD("SELECT * FROM marchandise");
+    $req = requetBDD("SELECT * FROM marchandise WHERE type='1'");
 ?>
 
 <script src="js/compteur.js"></script>
