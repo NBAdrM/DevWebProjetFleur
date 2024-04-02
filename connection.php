@@ -27,7 +27,6 @@
                     $error= "<h3 class=\"login-error\">Cette email est déjà asocier a un compte</h3>";
                 }
                 else{
-                    //TODO inserer dans la bdd avec un token aleatoire et enoyer l'email de confiramtion
                     $token = random_string(20);
                     echo requetBDD("INSERT INTO User (nom,email,pwd,token) VALUES('".$nom."','".$email."',SHA1('".$pwd."'),'".$token."' );");
                     emailInscription($email,$nom,$token);

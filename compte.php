@@ -40,7 +40,7 @@
     </table>
 
     <form action="" method="POST" class="deco">
-        <input type="submit" name="deco" value="deco"/>
+        <button class="btn_deco" type="submit" name="deco" value="deco">Déconnexion</button>
     </form>
 <?php
     PrintFooter();
