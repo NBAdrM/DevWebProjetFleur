@@ -31,12 +31,15 @@
       <?php foreach ($req as $v) : ?>
         <tr>
           <td>
-            <a href="./img/<?= $v['image_path'] ?>" target="_blank">
-              <figure>
-                <img src="./img/<?= $v['image_path'] ?>" alt="<?= $v['nom']?>">
-                <figcaption> <?= $v['nom']?> </figcaption>
-              </figure> 
-            </a>
+            <div class=zoom>
+                <a href="./img/<?= $v['image_path'] ?>" target="_blank">
+                  <figure>
+                    <img src="./img/<?= $v['image_path'] ?>" alt="<?= $v['nom']?>">
+                    <figcaption> <?= $v['nom']?> </figcaption>
+                  </figure>
+                </a>
+              </div>
+            </div>
           </td>
           <td><?= $v['prix'] ?>€</td>
           <td></td> 
