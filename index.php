@@ -3,8 +3,10 @@
     include("include/footer.php");
 
     PrintHeader();
+?>
+   
+<img src="./img/banniere" alt="bannière porsche">
 
-    
-
+<?php
     PrintFooter();
 ?>
