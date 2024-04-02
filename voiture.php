@@ -47,9 +47,9 @@
             <div class="compteur" data-stock="<?= $v['stock'] ?>">
               <button type="button" class="btn-decre">-</button>
               <button type="button" class="btn-incre">+</button>
-                <div class="quantite">0</div>
+              <div class="quantite">0</div>
                 <input class="quantite2" name="quantite" type="number" value="0" disabled/>
-            </div>
+              </div>
             <button name="voiture" type="submit" class="btn" value="<?= $v['id'] ?>">
               <span class="btn__visible">Ajouter au panier</span>
               <span class="btn__invisible"><?= $v['stock'] ?> Restant</span>
