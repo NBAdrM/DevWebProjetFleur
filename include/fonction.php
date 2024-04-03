@@ -41,4 +41,23 @@
 		}
 	}
 
+	function checkPanier(){
+		$panier='';
+		if(isset($_POST['voiture'])){
+			if(empty($_SESSION['id'])){
+			  header('Location: connection.php');
+			}
+			else{
+			  $result = requetBDD("INSERT INTO panier (id_user,id_ref,nb) VALUE ('".$_SESSION['id']."','".$_POST['voiture']."','".$_POST['quantite']."')");
+			  if ($result) {
+				$panier = "<h2 class=\"conf_panier\">L'article a été ajouter a votre panier</h2>";
+			  }
+			  else{
+				$panier = "<h2 class=\"conf_panier\">Un probleme est survenue</h2>";
+			  }
+			}
+		}
+		return $panier;
+	}
+
 ?>

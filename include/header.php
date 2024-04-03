@@ -1,7 +1,9 @@
 <?php
-    
+    include "fonction.php";
     function PrintHeader(){
         session_start();
+
+        $panier = checkPanier();
         if (empty($_SESSION['id'])) {
             $connexion="<ul class=\"connexion\">
                 <li><a href=\"connection.php\">Connexion</a></li>
@@ -55,7 +57,7 @@
                         <li><a href=\"contact.php\">Contact</a></li>
                     </ul>
                 </div>
-        ";
+        ".$panier;
     }
 
 ?>
