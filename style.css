@@ -443,7 +443,6 @@ footer li{
     align-items: center; 
 }
 
-
 .form_contact {
     margin-top: 20px;
     font-weight: bold;
@@ -455,10 +454,10 @@ footer li{
     display: inline-block;
 }
 
+.form_contact select,
 .form_contact input[type="date"],
 .form_contact input[type="text"],
 .form_contact input[type="email"],
-.form_contact select,
 .form_contact textarea {
     width: 250px; 
     margin-bottom: 10px;
@@ -469,10 +468,12 @@ footer li{
     text-align: center;
 }
 
-.form_contact input[type="date"],
+.form_contact select{width: 270px;}
+
+.form_contact select:hover,
+.form_contact input[type="date"]:hover,
 .form_contact input[type="text"]:hover,
 .form_contact input[type="email"]:hover,
-.form_contact select:hover,
 .form_contact textarea:hover {
     box-shadow: 20px 20px 0px #3c361f;
     top: -5px;
