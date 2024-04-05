@@ -93,6 +93,7 @@ header>a{
     font-size: 16px;
     margin-left: 10px;
     margin-right: 35px;
+    width: 30px;
   }
 .quantite2 {
     display: none;
