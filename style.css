@@ -499,23 +499,24 @@ footer li{
 }
 /*Fin du From de contact*/
 
-.btn_deco{
+.btn_deco, .btn_sup {
     background-color: transparent;
     border-radius: 2px;
     border: #b32821 solid 2px;
     position: relative;
     padding: 10px;
-    overflow: hidden;
     transition: 1s all ease-in-out;
     text-transform: uppercase;
+    z-index: 10;
     color: #b32821;
+    overflow: hidden;
 }
 
-.btn_deco:hover{
+.btn_deco:hover, .btn_sup:hover{
     color: white;
 }
 
-.btn_deco::before{
+.btn_deco::before, .btn_sup::before{
     content: '';
     position: absolute;
     top: -50%;
@@ -527,9 +528,16 @@ footer li{
     transition: 1s all ease-in-out;
     z-index: -1;
 }
+.btn_sup::before{
+    left: -160%;
+}
 
 .btn_deco:hover::before{
     width: 300%;
+}
+
+.btn_sup:hover::before{
+    width: 350%;
 }
 
 @keyframes btn-anim1 {

@@ -57,6 +57,10 @@
 			  }
 			}
 		}
+		if (isset($_POST["sup"])) {
+			requetBDD("DELETE FROM panier WHERE id='".$_POST["sup"]."'");
+			$panier="<h2 class=\"conf_panier\">L'article a bien été retirer de votre panier</h2>";
+		}
 		return $panier;
 	}
 
