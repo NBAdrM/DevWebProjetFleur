@@ -4,12 +4,14 @@
         session_start();
 
         $panier = checkPanier();
+
         if (empty($_SESSION['id'])) {
             $connexion="<ul class=\"connexion\">
                 <li><a href=\"connection.php\">Connexion</a></li>
             </ul>";
         }
         else {
+            $nb_panier='';
             include_once("fonction.php");
             $req=requetBDD("SELECT * FROM marchandise AS m JOIN panier AS p ON id_user='".$_SESSION['id']."' AND m.id=id_ref;");
             if($req->num_rows>0){
