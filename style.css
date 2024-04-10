@@ -531,7 +531,20 @@ footer li{
     overflow: hidden;
 }
 
-.btn_deco:hover, .btn_sup:hover, .btn_achat:hover{
+.btn_json{
+    background-color: transparent;
+    border-radius: 2px;
+    border: #004cff solid 2px;
+    position: relative;
+    padding: 10px;
+    transition: 1s all ease-in-out;
+    text-transform: uppercase;
+    z-index: 10;
+    color: #004cff;
+    overflow: hidden;
+}
+
+.btn_deco:hover, .btn_sup:hover, .btn_achat:hover, .btn_json:hover{
     color: white;
 }
 
@@ -561,6 +574,19 @@ footer li{
     z-index: -1;
 }
 
+.btn_json::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -125%;
+    transform: skew(40deg);
+    width: 100%;
+    height: 200%;
+    background-color: #004cff;
+    transition: 1s all ease-in-out;
+    z-index: -1;
+}
+
 .btn_sup::before{
     left: -160%;
 }
@@ -569,7 +595,7 @@ footer li{
     width: 300%;
 }
 
-.btn_sup:hover::before{
+.btn_sup:hover::before,.btn_json:hover::before{
     width: 350%;
 }
 

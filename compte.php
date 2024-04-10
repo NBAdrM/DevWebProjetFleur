@@ -81,14 +81,16 @@
         <form action="" method="POST" class="deco">
             <button class="btn_deco" type="submit" name="deco" value="deco">Déconnexion</button>
         </form>
+        <?php
+        if ($row[5]) {
+            echo "
+            <a href=\"admin.php\">
+                <button class=\"btn_deco\" type=\"submit\" name=\"deco\" value=\"deco\">Acces Commande</button>
+            </a>";
+        }
+        ?>
     </div>
-<?php
-    if ($row[5]) {
-        echo "
-        <a href=\"admin.php\">
-            <button class=\"btn_deco\" type=\"submit\" name=\"deco\" value=\"deco\">Acces Commande</button>
-        </a>";
-    }
 
+<?php
     PrintFooter();
 ?>

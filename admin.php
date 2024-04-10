@@ -11,12 +11,15 @@
     if(!$row[0]){
         header('Location: compte.php');
     }
+    $_SESSION['admin']=true;
     PrintHeader();
 
     $result=requetBDD("SELECT a.id AS aid,a.id_user,u.nom AS unom,u.email,a.id_ref,m.nom,m.prix,a.date FROM achat AS a 
     LEFT JOIN user AS u ON u.id=a.id_user
     LEFT JOIN marchandise AS m ON m.id=a.id_ref;");
+    
 ?>
+    <script src="js/telechargementJson.js"></script>
     <table class="tab_achat">
         <thead>
             <tr>
@@ -61,8 +64,9 @@
             <?php endforeach; ?>
         </tbody>
     </table>
-
-
+    <div align="center">
+        <button class="btn_json" id="telechargerJson">Télécharger le fichier JSON</button>
+    </div>
 <?php
     PrintFooter();
 ?>
