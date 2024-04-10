@@ -1,7 +1,10 @@
 <?php
     include "fonction.php";
     function PrintHeader(){
-        session_start();
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+    
 
         $panier = checkPanier();
 
