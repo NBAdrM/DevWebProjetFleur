@@ -606,20 +606,23 @@ footer li{
 .tab_achat{
     text-align: center;
     margin: 35px auto;
+    border-collapse: collapse;
 }
 
 .tab_achat thead td{
     font-weight: bold;
-    padding: 10px 20px;
 }
 
-.tab_achat tbody td{
-    padding: 5px;
-}
 
 .tab_achat tbody tr{
     background-color: #bdb8b8;
+    margin-top: 5px;
 }
+
+.tab_achat td{
+    padding: 5px 8px;
+}
+
 
 @keyframes btn-anim1 {
     0% {
