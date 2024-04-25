@@ -42,9 +42,9 @@
                     <nav>
                         <ul>
                             <li><a href=\"index.php\">Accueil</a></li>
-                            <li><a href=\"voiture.php\">Voiture</a></li>
-                            <li><a href=\"piece.php\">Pièce</a></li>
-                            <li><a href=\"goodies.php\">Goodies</a></li>
+                            <li><a href=\"produit.php?cat=voiture\">Voiture</a></li>
+                            <li><a href=\"produit.php?cat=piece\">Pièce</a></li>
+                            <li><a href=\"produit.php?cat=goodies\">Goodies</a></li>
                             <li><a href=\"contact.php\">Contact</a></li>
                         </ul>
                         ".$connexion."
@@ -56,9 +56,9 @@
                     <a href=\"index.php\">Accueil</a>
                     <h3>Nos produit</h3>
                     <ul>
-                        <li><a href=\"voiture.php\">Voiture</a></li>
-                        <li><a href=\"piece.php\">Pièce</a></li>
-                        <li><a href=\"goodies.php\">Goodies</a></li>
+                    <li><a href=\"produit.php?cat=voiture\">Voiture</a></li>
+                    <li><a href=\"produit.php?cat=piece\">Pièce</a></li>
+                    <li><a href=\"produit.php?cat=goodies\">Goodies</a></li>
                         <li><a href=\"contact.php\">Contact</a></li>
                     </ul>
                 </div>
