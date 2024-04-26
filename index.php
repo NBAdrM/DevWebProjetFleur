@@ -16,12 +16,12 @@
         </a>
     <h2>Pièces détachées</h2>
         <p>Retrouvez les pièces détachées d'origine pour entretenir votre Porsche.</p>
-        <a href="produit.php?cat=voiture">
+        <a href="produit.php?cat=piece">
             <button class="button">Découvrir nos pièces détachées</button>
         </a>
     <h2>Goodies</h2>
         <p>Découvrez notre sélection de goodies Porsche.</p>
-        <a href="produit.php?cat=voiture">
+        <a href="produit.php?cat=goodies">
             <button class="button">Découvrir nos goodies</button>
         </a>
 </div>
