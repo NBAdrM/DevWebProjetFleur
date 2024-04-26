@@ -3,7 +3,8 @@
 		header('Location: connexion.php');
 	}
     else{
-        include_once "include/fonction.php";
+        include "include/header.php";
+        include "include/footer.php";
         $token=$_GET['token'];
         //retirer les caratere speciaux 
         //$token = str_replace( array( '%', '@', '\'', ';', '<', '>', '\"',' ' ), '', $str);
@@ -13,8 +14,6 @@
             $confirmation = "Votre compte a bien été valider";
         }
     }
-	include "include/header.php";
-	include "include/footer.php";
     
     PrintHeader();
 ?>
