@@ -55,7 +55,7 @@
         </div>
         <br>
         <div class=\"form_contact\">
-            <span type=\"submit\" name=\"submit\">Envoyer</span>
+            <input type=\"submit\" name=\"submit\">
         </div>
     </form>
     </div>";

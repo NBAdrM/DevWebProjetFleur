@@ -462,6 +462,7 @@ footer li{
 .form_contact input[type="date"],
 .form_contact input[type="text"],
 .form_contact input[type="email"],
+.form_contact input[type="submit"],
 .form_contact textarea {
     width: 250px; 
     margin-bottom: 10px;
@@ -478,6 +479,7 @@ footer li{
 .form_contact input[type="date"]:hover,
 .form_contact input[type="text"]:hover,
 .form_contact input[type="email"]:hover,
+.form_contact input[type="submit"]:hover,
 .form_contact textarea:hover {
     box-shadow: 20px 20px 0px #3c361f;
     top: -5px;
@@ -488,20 +490,6 @@ footer li{
     resize : none;
     width : 450px;
     height : 100px;
-}
-
-.form_contact span{
-    padding: 10px 20px;
-    background-color: #4c4b49;
-    color: #fff;
-    border: none;
-    border-radius: 50px;
-}
-
-.form_contact span:hover{
-    box-shadow: 10px 10px 0px #3c361f;
-    top: -5px;
-    left: -5px;
 }
 
 .form_contact span:active{
