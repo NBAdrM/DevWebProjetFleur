@@ -10,9 +10,10 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
+// Fonction pour envoyer l'e-mail
 function sendContactEmail($nom, $prenom, $genre, $date_naissance, $fonction, $email, $sujet, $contenu) {
     try {
-        // Configurez les informations d'envoi d'e-mail
+        // Configuration de PHPMailer
         $mail = new PHPMailer(true);
         $mail->isSMTP();
         $mail->SMTPDebug = SMTP::DEBUG_OFF;
@@ -22,26 +23,31 @@ function sendContactEmail($nom, $prenom, $genre, $date_naissance, $fonction, $em
         $mail->SMTPAuth = true;
         $mail->Username = 'porscheprojet@gmail.com';
         $mail->Password = 'xndugeanrokwjczx';
-
-        // Configurez l'expéditeur de l'e-mail
         $mail->setFrom('porscheprojet@gmail.com', 'Projet Porsche');
-
-        // Ajoutez l'adresse e-mail du destinataire et le sujet
         $mail->addAddress('porscheprojet@gmail.com');
         $mail->Subject = $sujet;
 
-        // Configurez le corps de l'e-mail
-        $mail->Body = "Nom : $nom\nPrénom : $prenom\nGenre : $genre\nDate de naissance : $date_naissance\nFonction : $fonction\nEmail : $email\n\n$contenu";
+        // Configuration du corps de l'e-mail avec du HTML pour formater les données
+        $mail->isHTML(true);
+        $mail->Body = "
+            <h2>Formulaire de contact</h2>
+            <p><strong>Nom :</strong> $nom</p>
+            <p><strong>Prénom :</strong> $prenom</p>
+            <p><strong>Genre :</strong> $genre</p>
+            <p><strong>Date de naissance :</strong> $date_naissance</p>
+            <p><strong>Fonction :</strong> $fonction</p>
+            <p><strong>Email :</strong> $email</p>
+            <p><strong>Contenu :</strong> $contenu</p>
+        ";
 
-        // Envoyez l'e-mail
+        // Envoi de l'e-mail
         if (!$mail->send()) {
             echo 'Mailer Error: ' . $mail->ErrorInfo;
-         } else {
-            echo 'Un mail de validation a été envoyer';
-         }
+        } else {
+            echo 'Un mail de validation a été envoyé';
+        }
     } catch (Exception $e) {
-        echo 'Mail pas envoyer' . $mail->ErrorInfo;
+        echo 'Mail pas envoyé' . $mail->ErrorInfo;
     }
 }
-
 ?>
