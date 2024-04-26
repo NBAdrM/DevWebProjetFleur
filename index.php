@@ -5,8 +5,8 @@
     PrintHeader();
 ?>
 <div class="tete_index">
-    <h1>Bienvenue sur le site officiel de</h1>
-    <img src="./img/banniere" alt="bannière porsche">
+    <h2>Bienvenue sur le site officiel de</h2>
+    <img class="banniere" src="./img/banniere" alt="bannière porsche">
 </div>
 <div class="index">
     <h2>Nos voitures</h2>
