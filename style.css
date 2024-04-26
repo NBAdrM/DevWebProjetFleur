@@ -512,7 +512,7 @@ footer li{
 }
 /*Fin du From de contact*/
 
-.btn_deco, .btn_sup {
+.btn_deco, .btn_sup , .index button{
     background-color: transparent;
     border-radius: 2px;
     border: #b32821 solid 2px;
@@ -551,11 +551,11 @@ footer li{
     overflow: hidden;
 }
 
-.btn_deco:hover, .btn_sup:hover, .btn_achat:hover, .btn_json:hover{
+.btn_deco:hover, .btn_sup:hover, .btn_achat:hover, .btn_json:hover, .index button:hover{
     color: white;
 }
 
-.btn_deco::before, .btn_sup::before{
+.btn_deco::before, .btn_sup::before, .index button::before{
     content: '';
     position: absolute;
     top: -50%;
@@ -602,7 +602,7 @@ footer li{
     width: 300%;
 }
 
-.btn_sup:hover::before,.btn_json:hover::before{
+.btn_sup:hover::before,.btn_json:hover::before,.index button:hover::before{
     width: 350%;
 }
 
@@ -629,6 +629,29 @@ footer li{
 .tab_achat td{
     padding: 5px 8px;
 }
+
+.banniere{
+    width: 100%;
+}
+
+.tete_index{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.index h2{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.index p{
+    margin-left: 90px;
+}
+
+.index a{
+    margin-left: 90px;
+}
+
 
 
 @keyframes btn-anim1 {

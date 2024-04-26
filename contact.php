@@ -6,7 +6,7 @@
     PrintHeader();
 
     echo "
-    <div class=\"global\">;
+    <div class=\"global\">
     <h2 class=\"titre\">Contacter nous</h2>
     <form action=\"\" method=\"GET\">
         <div class=\"form_contact\">
