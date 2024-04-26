@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
     function telechargerJSON() {
-        console.log('ok');
         var xhr = new XMLHttpRequest();
         xhr.open('GET', 'ajax/recuperer_donnees_json.php', true);
         xhr.setRequestHeader('Content-Type', 'application/json');
