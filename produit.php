@@ -10,9 +10,9 @@
         $categorie = $_GET['cat'];
         if($categorie === 'voiture') {
             $req = requetBDD("SELECT * FROM marchandise WHERE type='1'");
-        } else if ($categorie === 'goodies') {
-            $req = requetBDD("SELECT * FROM marchandise WHERE type='2'");
         } else if ($categorie === 'piece') {
+            $req = requetBDD("SELECT * FROM marchandise WHERE type='2'");
+        } else if ($categorie === 'goodies') {
             $req = requetBDD("SELECT * FROM marchandise WHERE type='3'");
         }
     }
