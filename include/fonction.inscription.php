@@ -24,7 +24,7 @@ use PHPMailer\PHPMailer\SMTP;
          $mail->Port = 465;
          $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
          $mail->SMTPAuth = true;
-         $mail->Username = 'porscheprojet@gmail.com';
+         $mail->Username = 'porscheprojet@gmail.com';//this account has been deleted
          $mail->Password = 'xndugeanrokwjczx ';
          $mail->setFrom('porscheprojet@gmail.com', 'Projet Porsche');
          $mail->addReplyTo('porscheprojet@gmail.com', 'Projet Porsche');
